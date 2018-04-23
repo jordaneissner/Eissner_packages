@@ -23,6 +23,7 @@ shallow and congestus clouds
 Separate clouds into shallow cumulus and cumulus congestus
 }
 \examples{
-
+data(clouds)
+shallow <- Cloud_Classification(clouds, 4000, 5000, 9000)$shallow
 
 }

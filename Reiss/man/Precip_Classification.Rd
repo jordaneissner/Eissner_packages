@@ -19,6 +19,8 @@ precipitating and non-precipitating clouds
 Separate clouds into precipitating and non-precipitating
 }
 \examples{
+data(clouds)
+precip <- Precip_Classification(clouds, 1000)$precip
 
 
 }

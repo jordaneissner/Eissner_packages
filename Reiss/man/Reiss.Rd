@@ -10,6 +10,6 @@ Reiss: A package to organize functions for my EVRN 720 final project from the sp
 }
 \section{Reiss functions}{
 
-Cloud_Classification, Precip_Classification, Analyze, T_test
+Cloud_Classification, Precip_Classification, Analyze, T_test, Hello, add
 }
 

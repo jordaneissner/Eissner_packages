@@ -12,7 +12,7 @@ T_test(x, y)
 \item{y}{A set of real numbers}
 }
 \value{
-the p- value of \code{x} and \code{y}
+the p- value of the Student's T-test of \code{x} and \code{y}
 }
 \description{
 Find the difference in means of two variables
