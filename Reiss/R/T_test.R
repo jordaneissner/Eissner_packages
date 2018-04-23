@@ -14,7 +14,7 @@
 #' @param x A set of real numbers
 #' @param y A set of real numbers
 #'
-#' @return the p- value of \code{x} and \code{y}
+#' @return the p- value of the Student's T-test of \code{x} and \code{y}
 #'
 #' @examples
 #' T_test(airquality$Ozone, airquality$Wind)

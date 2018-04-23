@@ -24,14 +24,13 @@
 #'
 #' @examples
 #' data(clouds)
-#' list(shallow, congestus) <- Cloud_Classification(clouds$CTH, 4000, 5000, 9000)
-#' shallow
-#' congestus
+#' shallow <- Cloud_Classification(clouds, 4000, 5000, 9000)$shallow
 #'
 
 
 Cloud_Classification <- function(data, CTHmax_s, CTHmin_c, CTHmax_c)
 {
+  data <- data.frame(data)
   shallow <- data[data$CTH < CTHmax_s,]
   congestus <- data[data$CTH > CTHmin_c & data$CTH < CTHmax_c,]
   return(list(shallow=shallow, congestus=congestus))

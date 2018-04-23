@@ -19,12 +19,14 @@
 #'
 #' @examples
 #' data(clouds)
-#' precip <- Precip_Classification(clouds$CBH, 1000)$precip
+#' precip <- Precip_Classification(clouds, 1000)$precip
 #'
 #'
 
 Precip_Classification <- function(cloud, CBH_thresh)
 {
+  cloud <- data.frame(cloud)
+
   precip <- cloud[cloud$CBH < CBH_thresh,]
   noprecip <- cloud[cloud$CBH > CBH_thresh,]
 
